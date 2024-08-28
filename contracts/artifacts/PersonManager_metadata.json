@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_newPersonName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newPersonAge",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isImportant",
+						"type": "bool"
+					}
+				],
+				"name": "addNewPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_personName",
+						"type": "string"
+					}
+				],
+				"name": "deletePersonByName",
+				"outputs": [
+					{
+						"internalType": "int8",
+						"name": "",
+						"type": "int8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "readAllPerson",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_personName",
+						"type": "string"
+					}
+				],
+				"name": "readPersonByName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_personName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_newPersonName",
+						"type": "string"
+					}
+				],
+				"name": "updatePersonByName",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "PersonManager performs CRUD operations on an array of Person/ImportantPerson*",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/personManagerContract.sol": "PersonManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/personContract.sol": {
+			"keccak256": "0xb7047f288cfd6d1e086fe4c2c66ee262bd41687aec98855dddaf8f8a1a79e88b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://90ca2545bee16c2aab4fa059ffeea0230b27979ca6cd4e509b9b8f87f06e4472",
+				"dweb:/ipfs/QmNhq962FAwLw9U4YXvjqBafjoBwDtZFDNjHeDrY3eSiyp"
+			]
+		},
+		"contracts/personManagerContract.sol": {
+			"keccak256": "0x7a2370d275f197b6aa28d73a023882f20c0e998b25015d52dde7bd02b997495a",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://2219c0d2d739d0b63275c3ad313e8fae073e4cda3abe2369f42caf6d791ca9e4",
+				"dweb:/ipfs/QmPjAduDp3fzrYDXUVpbcZvShnW1nsPJkZ5LS2sFdThAGB"
+			]
+		}
+	},
+	"version": 1
+}
